@@ -1,0 +1,212 @@
+.gridContainer{
+    grid-template-columns: repeat(2, 650px);
+    grid-template-rows: auto;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "three four"
+    "twelve eleven"
+    "one two"
+    "six five"
+    "seven eight"
+    "ten nine";    
+}
+
+.serieAcontainer{
+    grid-template-columns: repeat(2, 630px);
+    grid-template-rows: auto;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+    "nine eleven"
+    "ten twelve"
+    "one five"
+    "two six"
+    "three seven"
+    "four eight";
+}
+
+.laLigaContainer{
+    grid-template-columns: repeat(2, 650px);
+    grid-template-rows: auto;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "three eleven"
+    "four twelve"
+    "one five"
+    "two six"
+    "seven nine"
+    "eight ten";   
+}
+
+.gridItem{
+    margin: 20px;
+    border: solid 3px;
+    border-color: navy;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gridItem img{
+    overflow: hidden;
+}
+
+.gridItem li{
+    display: inline-block;
+}
+
+.One{
+    grid-area: one;
+}
+
+.Two{
+    grid-area: two;
+}
+
+.Three{
+    grid-area: three;
+}
+
+.Four{
+    grid-area: four;
+}
+
+.Five{
+    grid-area: five;
+}
+
+.Six{
+    grid-area: six;
+}
+
+.Seven{
+    grid-area: seven;
+}
+
+.Eight{
+    grid-area: eight;
+}
+
+.Nine{
+    grid-area: nine;
+}
+
+.Ten{
+    grid-area: ten;
+}
+
+.Eleven{
+    grid-area: eleven;
+}
+
+.Twelve{
+    grid-area: twelve;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1366px){
+    .gridContainer{
+        grid-template-columns: repeat(2, 450px);
+    }
+
+    .serieAcontainer{
+        grid-template-columns: repeat(2, 435px);
+    }
+
+    .laLigaContainer{
+        grid-template-columns: repeat(2, 450px);
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .gridContainer{
+        grid-template-columns: 650px;
+        grid-template-areas: 
+        "three"
+        "four"
+        "eleven"
+        "twelve"
+        "one"
+        "two"
+        "five"
+        "six"
+        "seven"
+        "eight"
+        "nine"
+        "ten";
+    }
+    
+    .serieAcontainer{
+        grid-template-columns: 635px;
+        grid-template-areas:
+        "nine"
+        "ten"
+        "eleven"
+        "twelve"
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight";
+    }
+
+    .laLigaContainer{
+        grid-template-columns: 650px;
+        grid-template-areas:
+        "three"
+        "four"
+        "eleven"
+        "twelve"
+        "one"
+        "two"
+        "five"
+        "six"
+        "seven"
+        "eight"
+        "nine"
+        "ten";
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .gridContainer{
+        grid-template-columns: 375px;
+    }
+
+    .serieAcontainer{
+        grid-template-columns: 350px;
+    }
+    
+    .laLigaContainer{
+        grid-template-columns: 375px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .gridContainer{
+        grid-template-columns: 275px;
+    }
+
+    .serieAcontainer{
+        grid-template-columns: 250px;
+    }
+
+    .laLigaContainer{
+        grid-template-columns: 275px;
+    }
+}
