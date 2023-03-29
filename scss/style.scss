@@ -21,10 +21,12 @@ ul li{
     font-family: 'Ubuntu', sans-serif;
 }
 
-footer{
+.navbar-collapse{
+    justify-content: center;
+}
+
+.navbar-expand-lg, .footer{
     background-color: skyblue;
-    height: 102px;
-    width: 100%;
 }
 
 section ul{

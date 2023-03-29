@@ -167,22 +167,6 @@ header nav ul li a {
     grid-template-columns: 275px;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: seagreen;
-}
-
-ul li {
-  padding: 10px;
-  border: 5px;
-  margin: 5px;
-  font-family: "Ubuntu", sans-serif;
-}
-
 h1 {
   padding: 15px;
   border: 5px;
@@ -190,7 +174,7 @@ h1 {
   text-align: center;
   border-style: dashed;
   border-color: rgb(73, 20, 220);
-  color: blue;
+  color: navy;
 }
 
 h2 {
@@ -219,10 +203,28 @@ p {
   text-indent: 35px;
 }
 
-footer {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: seagreen;
+}
+
+ul li {
+  padding: 10px;
+  border: 5px;
+  margin: 5px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-expand-lg, .footer {
   background-color: skyblue;
-  height: 102px;
-  width: 100%;
 }
 
 section ul {
