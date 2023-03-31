@@ -1,301 +1,232 @@
 /*Notes in CSS */
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap');
-
-*{ /*Resetting the page*/
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap");
+header {
+  background-color: skyblue;
+  height: auto;
+  text-align: center;
+}
+header nav ul {
+  margin-bottom: 0px;
+}
+header nav ul li {
+  list-style: none; /* Removing the dots from the list*/
+  display: inline-block;
+  padding: 15px;
+  border: 5px;
+  margin: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 
-body{
-    background-color: seagreen;
+.gridContainer {
+  grid-template-columns: repeat(2, 650px);
+  grid-template-rows: auto;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "three four" "twelve eleven" "one two" "six five" "seven eight" "ten nine";
 }
 
-header{
-    background-color: skyblue;
-    height: auto;
-    text-align: center;
+.serieAcontainer {
+  grid-template-columns: repeat(2, 630px);
+  grid-template-rows: auto;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "nine eleven" "ten twelve" "one five" "two six" "three seven" "four eight";
 }
 
-nav ul li{
-    list-style: none; /* Removing the dots from the list*/
-    display: inline-block;
-    padding: 15px;
-    border: 5px;
-    margin: 20px;;
+.laLigaContainer {
+  grid-template-columns: repeat(2, 650px);
+  grid-template-rows: auto;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "three eleven" "four twelve" "one five" "two six" "seven nine" "eight ten";
 }
 
-nav ul{
-    margin-bottom: 0px;
+.gridItem {
+  margin: 20px;
+  border: solid 3px;
+  border-color: navy;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
 }
 
-ul li{
-    padding: 10px;
-    border: 5px;
-    margin: 5px;
-    font-family: 'Ubuntu', sans-serif;
+.gridItem img {
+  overflow: hidden;
 }
 
-h1{
-    padding: 15px;
-    border: 5px;
-    margin-bottom: 15px;
-    text-align: center;
-    border-style: dashed;
-    border-color: rgb(73, 20, 220);
-    color: blue;
+.gridItem li {
+  display: inline-block;
 }
 
-h2{
-    padding: 10px;
-    border: 5px;
-    margin: 10px;
-    color: midnightblue;
+.One {
+  grid-area: one;
 }
 
-h3{
-    padding: 5px;
-    border: 5px;
-    margin: 7px;
-    color: midnightblue;
+.Two {
+  grid-area: two;
 }
 
-h4{
-    padding: 5px;
-    color: midnightblue;
+.Three {
+  grid-area: three;
 }
 
-p{
-    padding: 5px;
-    margin: 5px;
-    font-family: 'Ubuntu', sans-serif;
-    text-indent: 35px;
+.Four {
+  grid-area: four;
 }
 
-footer{
-    background-color: skyblue;
-    height: 102px;
-    width: 100%;
+.Five {
+  grid-area: five;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: black;
+.Six {
+  grid-area: six;
 }
 
-section ul{
-    list-style: none;
+.Seven {
+  grid-area: seven;
 }
 
-.gridContainer{
-    grid-template-columns: repeat(2, 650px);
-    grid-template-rows: auto;
-    display: grid;
-    justify-content: space-around;
-    align-items: center;
-    justify-items: center;
-    grid-template-areas: 
-    "three four"
-    "twelve eleven"
-    "one two"
-    "six five"
-    "seven eight"
-    "ten nine";    
+.Eight {
+  grid-area: eight;
 }
 
-.serieAcontainer{
-    grid-template-columns: repeat(2, 630px);
-    grid-template-rows: auto;
-    display: grid;
-    justify-content: space-around;
-    align-items: center;
-    justify-items: center;
-    grid-template-areas:
-    "nine eleven"
-    "ten twelve"
-    "one five"
-    "two six"
-    "three seven"
-    "four eight";
+.Nine {
+  grid-area: nine;
 }
 
-.laLigaContainer{
-    grid-template-columns: repeat(2, 650px);
-    grid-template-rows: auto;
-    display: grid;
-    justify-content: space-around;
-    align-items: center;
-    justify-items: center;
-    grid-template-areas: 
-    "three eleven"
-    "four twelve"
-    "one five"
-    "two six"
-    "seven nine"
-    "eight ten";   
+.Ten {
+  grid-area: ten;
 }
 
-.gridItem{
-    margin: 20px;
-    border: solid 3px;
-    border-color: navy;
-    overflow: hidden;
-    width: 100%;
-    border-radius: 10px;
+.Eleven {
+  grid-area: eleven;
 }
 
-.gridItem img{
-    overflow: hidden;
+.Twelve {
+  grid-area: twelve;
 }
 
-.gridItem li{
-    display: inline-block;
+.footer {
+  display: flex;
+  align-items: center;
 }
 
-.One{
-    grid-area: one;
+@media screen and (max-width: 1366px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 450px);
+  }
+  .serieAcontainer {
+    grid-template-columns: repeat(2, 435px);
+  }
+  .laLigaContainer {
+    grid-template-columns: repeat(2, 450px);
+  }
 }
-
-.Two{
-    grid-area: two;
+@media screen and (max-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: 650px;
+    grid-template-areas: "three" "four" "eleven" "twelve" "one" "two" "five" "six" "seven" "eight" "nine" "ten";
+  }
+  .serieAcontainer {
+    grid-template-columns: 635px;
+    grid-template-areas: "nine" "ten" "eleven" "twelve" "one" "two" "three" "four" "five" "six" "seven" "eight";
+  }
+  .laLigaContainer {
+    grid-template-columns: 650px;
+    grid-template-areas: "three" "four" "eleven" "twelve" "one" "two" "five" "six" "seven" "eight" "nine" "ten";
+  }
 }
-
-.Three{
-    grid-area: three;
-}
-
-.Four{
-    grid-area: four;
-}
-
-.Five{
-    grid-area: five;
-}
-
-.Six{
-    grid-area: six;
-}
-
-.Seven{
-    grid-area: seven;
-}
-
-.Eight{
-    grid-area: eight;
-}
-
-.Nine{
-    grid-area: nine;
-}
-
-.Ten{
-    grid-area: ten;
-}
-
-.Eleven{
-    grid-area: eleven;
-}
-
-.Twelve{
-    grid-area: twelve;
-}
-
-.footer{
-    display: flex;
-    align-items: center;
-}
-
-@media screen and (max-width: 1366px){
-    .gridContainer{
-        grid-template-columns: repeat(2, 450px);
-    }
-
-    .serieAcontainer{
-        grid-template-columns: repeat(2, 435px);
-    }
-
-    .laLigaContainer{
-        grid-template-columns: repeat(2, 450px);
-    }
-}
-
-@media screen and (max-width: 1024px){
-    .gridContainer{
-        grid-template-columns: 650px;
-        grid-template-areas: 
-        "three"
-        "four"
-        "eleven"
-        "twelve"
-        "one"
-        "two"
-        "five"
-        "six"
-        "seven"
-        "eight"
-        "nine"
-        "ten";
-    }
-    
-    .serieAcontainer{
-        grid-template-columns: 635px;
-        grid-template-areas:
-        "nine"
-        "ten"
-        "eleven"
-        "twelve"
-        "one"
-        "two"
-        "three"
-        "four"
-        "five"
-        "six"
-        "seven"
-        "eight";
-    }
-
-    .laLigaContainer{
-        grid-template-columns: 650px;
-        grid-template-areas:
-        "three"
-        "four"
-        "eleven"
-        "twelve"
-        "one"
-        "two"
-        "five"
-        "six"
-        "seven"
-        "eight"
-        "nine"
-        "ten";
-    }
-}
-
 @media screen and (max-width: 720px) {
-    .gridContainer{
-        grid-template-columns: 375px;
-    }
-
-    .serieAcontainer{
-        grid-template-columns: 350px;
-    }
-    
-    .laLigaContainer{
-        grid-template-columns: 375px;
-    }
+  .gridContainer {
+    grid-template-columns: 375px;
+  }
+  .serieAcontainer {
+    grid-template-columns: 350px;
+  }
+  .laLigaContainer {
+    grid-template-columns: 375px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .gridContainer {
+    grid-template-columns: 275px;
+  }
+  .serieAcontainer {
+    grid-template-columns: 250px;
+  }
+  .laLigaContainer {
+    grid-template-columns: 275px;
+  }
+}
+h1 {
+  padding: 15px;
+  border: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-style: dashed;
+  border-color: rgb(179, 119, 29);
+  color: navy;
 }
 
-@media screen and (max-width: 420px){
-    .gridContainer{
-        grid-template-columns: 275px;
-    }
-
-    .serieAcontainer{
-        grid-template-columns: 250px;
-    }
-
-    .laLigaContainer{
-        grid-template-columns: 275px;
-    }
+h2 {
+  padding: 10px;
+  border: 5px;
+  margin: 10px;
+  color: midnightblue;
 }
+
+h3 {
+  padding: 5px;
+  border: 5px;
+  margin: 7px;
+  color: midnightblue;
+}
+
+h4 {
+  padding: 5px;
+  color: midnightblue;
+}
+
+p {
+  padding: 5px;
+  margin: 5px;
+  font-family: "Ubuntu", sans-serif;
+  text-indent: 35px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: seagreen;
+}
+
+ul li {
+  padding: 10px;
+  border: 5px;
+  margin: 5px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-expand-lg, .footer {
+  background-color: skyblue;
+}
+
+section ul {
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */
