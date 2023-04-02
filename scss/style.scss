@@ -1,8 +1,6 @@
 /*Notes in CSS */
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap');
-@import "navbar";
-@import "grids";
 @import "text";
 
 *{ //Resetting the page
@@ -31,4 +29,11 @@ ul li{
 
 section ul{
     list-style: none;
+}
+
+img{
+    overflow: hidden;
+    width: 100%;
+    border-color: navy;
+    border-style: solid;
 }
