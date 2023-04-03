@@ -18,15 +18,17 @@ h2 {
 }
 
 h3 {
-  padding: 5px;
+  padding: 25px;
   border: 5px;
   margin: 7px;
   color: midnightblue;
+  text-align: center;
 }
 
 h4 {
   padding: 5px;
   color: midnightblue;
+  text-align: center;
 }
 
 p {
@@ -34,6 +36,7 @@ p {
   margin: 5px;
   font-family: "Ubuntu", sans-serif;
   text-indent: 35px;
+  text-align: justify;
 }
 
 * {
@@ -45,13 +48,6 @@ body {
   background-color: seagreen;
 }
 
-ul li {
-  padding: 10px;
-  border: 5px;
-  margin: 5px;
-  font-family: "Ubuntu", sans-serif;
-}
-
 .navbar-collapse {
   justify-content: center;
 }
@@ -60,13 +56,22 @@ ul li {
   background-color: skyblue;
 }
 
-section ul {
-  list-style: none;
-}
-
 img {
   overflow: hidden;
   width: 100%;
   border-color: navy;
   border-style: solid;
+  margin-bottom: 25px;
+}
+
+.rowTwo {
+  background-color: rgb(87, 108, 188);
+}
+
+.rowOne {
+  background-color: rgb(165, 215, 232);
+}
+
+.row {
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
