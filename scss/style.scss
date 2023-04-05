@@ -22,10 +22,13 @@ body{
 
 img{
     overflow: hidden;
-    width: 100%;
+    width: 85%;
     border-color: navy;
     border-style: solid;
     margin-bottom: 25px;
+    &:hover{
+        width: 100%;
+    }
 }
 
 .rowTwo{
@@ -38,4 +41,16 @@ img{
 
 .row{
     align-items: center;
+}
+
+.left:hover, .right:hover, img:hover{
+    transition: all 1s;
+}
+
+.left:hover{
+    transform: skew(10deg);
+}
+
+.right:hover{
+    transform: skew(-10deg);
 }
