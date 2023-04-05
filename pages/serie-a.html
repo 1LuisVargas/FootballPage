@@ -5,10 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Linking bootstrap CSS file -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Linking my personal CSS file -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Football</title>
+    
+    <!-- All SEO relevant information -->
+    <meta name="description" content="Learn about how the Serie A began, how it has become one of the most competitive football leagues in the world, and about some of the most notable recent players in it">
+    <meta name="keywords" content="Serie A, Italian football, Italian 1st division football, Competitive football, Romelu Lukaku, Paulo Dybala, Manuel Locatelli, Federico Chiesa, Dusan Vlahovic, Nicolo Barella">
+    <title>Serie A, Italy's 1st Division Football League</title>
+
     <link rel="icon" type="image/x-icon" href="../images/soccer-ball.png">
 </head>
 
@@ -65,52 +74,89 @@
     </main>
 
     <section>
+
         <h3>Notable current players of the Serie A</h3>
-        <ul class="serieAcontainer">
-            <li class="gridItem One">Romelu Lukaku: The Belgian striker is a physical force on the pitch and currently
+        <!-- Bootstrap grid system -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col g-3">
+                    Romelu Lukaku: The Belgian striker is a physical force on the pitch and currently
                 plays for Inter Milan. He is known for his strength, finishing ability, and work rate, and has been a
                 key player for both his club and country. You can read more about his statistic in the official <a
                     target="_blank" href="https://www.legaseriea.it/en/player/romelu-lukaku-97006/statistiche">Serie A
-                    page.</a></li>
-            <img class="gridItem Two" src="../images/romelu-lukaku.jpg"
-                alt="Romelu Lukaku after passing an enemy with the ball">
-            <li class="gridItem Three">Nicolo Barella: The Italian midfielder is a rising star in Serie A and currently
-                plays for Inter Milan. He is known for his technical ability, vision, and tenacity, and has been a key
-                player for both his club and the Italian national team. You can read more about his statistic in the
-                official <a target="_blank"
-                    href="https://www.legaseriea.it/en/player/nicolo-barella-90079/statistiche">Serie A page.</a></li>
-            <img class="gridItem Four" src="../images/nicolo-barella.jpg" alt="Nicolo Barella celebrating a goal">
-            <li class="gridItem Five">Paulo Dybala: The Argentine forward is one of the most skillful and creative
+                    page.</a>
+                </div>
+                <div class="col g-3">
+                    Paulo Dybala: The Argentine forward is one of the most skillful and creative
                 players in the league and currently plays for Roma. He is known for his dribbling ability, vision, and
                 versatility, and has been a key player for both his club and country. You can read more about his
                 statistic in the official <a target="_blank"
-                    href="https://www.legaseriea.it/en/player/paulo-dybala-90153/statistiche"> Serie A page.</a></li>
-            <img class="gridItem Six" src="../images/paulo-dybala.jpg"
-                alt="Paulo Dybala celebrating a goal with the Argentina national team">
-            <li class="gridItem Seven">Manuel Locatelli: The Italian midfielder is a rising star in Serie A and
+                    href="https://www.legaseriea.it/en/player/paulo-dybala-90153/statistiche"> Serie A page.</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col g-3">
+                    <img src="../images/romelu-lukaku.jpg"
+                alt="Romelu Lukaku after passing an enemy with the ball">
+                </div>
+                <div class="col g-3">
+                    <img src="../images/paulo-dybala.jpg"
+                    alt="Paulo Dybala celebrating a goal with the Argentina national team">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col g-3">
+                    Manuel Locatelli: The Italian midfielder is a rising star in Serie A and
                 currently plays for Juventus. He is known for his passing ability, tactical intelligence, and work rate,
                 and has been linked with moves to several top European clubs after impressing for Italy at the 2020
                 European Championship. You can read more about his statistic in the official <a target="_blank"
-                    href="https://www.legaseriea.it/en/player/manuel-locatelli-90327/statistiche">Serie A page.</a></li>
-            <img class="gridItem Eight" src="../images/manuel-locatelli.jpg"
-                alt="Manuel Locatelli fighting the ball with an enemy">
-            <li class="gridItem Nine">Federico Chiesa: The Italian winger is one of the most exciting young players in
+                    href="https://www.legaseriea.it/en/player/manuel-locatelli-90327/statistiche">Serie A page.</a>
+                </div>
+                <div class="col-8 g-3">
+                    Federico Chiesa: The Italian winger is one of the most exciting young players in
                 Serie A and currently plays for Juventus. He is known for his speed, dribbling ability, and finishing,
                 and has already made a name for himself both in Italy and internationally. You can read more about his
                 statistic in the official <a target="_blank"
-                    href="https://www.legaseriea.it/en/player/federico-chiesa-90214/statistiche">Serie A page.</a></li>
-            <img class="gridItem Ten" src="../images/federico-chiesa.jpeg"
+                    href="https://www.legaseriea.it/en/player/federico-chiesa-90214/statistiche">Serie A page.</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col g-3">
+                    <img src="../images/manuel-locatelli.jpg"
+                alt="Manuel Locatelli fighting the ball with an enemy">
+                </div>
+                <div class="col-8 g-3">
+                    <img src="../images/federico-chiesa.jpeg"
                 alt="Federico Chiesa celebrating a goal with his arms spread wide">
-            <li class="gridItem Eleven"> Dusan Vlahovic: he Serbian forward, who plays for Fiorentina, is known for his
-                strength, pace, and impressive scoring record. Vlahovic has been in great form this season, having
-                scored 16 goals in 22 league matches for Fiorentina, making him one of the top goal scorers in Serie A.
-                He has also caught the attention of top clubs around Europe, with rumors linking him to a potential move
-                to a bigger team in the future. You can read more abnout his statistic in the official <a
-                    target="_blank" href="https://www.legaseriea.it/en/player/dusan-vlahovic-90677/statistiche">Serie A
-                    page.</a></li>
-            <img class="gridItem Twelve" src="../images/dusan-vlahovic.jpg"
-                alt="Dusan Vlahovic screaming as a goal celebration">
-        </ul>
+            </div>
+            <div class="row">
+                <div class="col-8 g-3">
+                    Dusan Vlahovic: he Serbian forward, who plays for Fiorentina, is known for his
+                    strength, pace, and impressive scoring record. Vlahovic has been in great form this season, having
+                    scored 16 goals in 22 league matches for Fiorentina, making him one of the top goal scorers in Serie A.
+                    He has also caught the attention of top clubs around Europe, with rumors linking him to a potential move
+                    to a bigger team in the future. You can read more abnout his statistic in the official <a
+                        target="_blank" href="https://www.legaseriea.it/en/player/dusan-vlahovic-90677/statistiche">Serie A
+                        page.</a>
+                </div>
+                <div class="col g-3">
+                    Nicolo Barella: The Italian midfielder is a rising star in Serie A and currently
+                plays for Inter Milan. He is known for his technical ability, vision, and tenacity, and has been a key
+                player for both his club and the Italian national team. You can read more about his statistic in the
+                official <a target="_blank"
+                    href="https://www.legaseriea.it/en/player/nicolo-barella-90079/statistiche">Serie A page.</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8 g-3">
+                    <img src="../images/dusan-vlahovic.jpg"
+                    alt="Dusan Vlahovic screaming as a goal celebration">
+                </div>
+                <div class="col g-3">
+                    <img src="../images/nicolo-barella.jpg" alt="Nicolo Barella celebrating a goal pointing at the sky">
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer mt-auto py-3 text-center">
