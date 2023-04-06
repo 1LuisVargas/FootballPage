@@ -1,6 +1,7 @@
 /*Notes in CSS */
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap');
+@import "mixins";
 @import "text";
 
 *{ //Resetting the page
@@ -9,7 +10,7 @@
 }
 
 body{
-    background-color: seagreen;
+    background-color: rgb(165, 215, 232);
 }
 
 .navbar-collapse{
@@ -22,7 +23,7 @@ body{
 
 img{
     overflow: hidden;
-    width: 85%;
+    width: 90%;
     border-color: navy;
     border-style: solid;
     margin-bottom: 25px;
@@ -31,11 +32,11 @@ img{
     }
 }
 
-.rowTwo{
+.rowOne{
     background-color: rgb(87, 108, 188);
 }
 
-.rowOne{
+.rowTwo{
     background-color: rgb(165, 215, 232);
 }
 
@@ -53,4 +54,8 @@ img{
 
 .right:hover{
     transform: skew(-10deg);
+}
+
+.fix{
+    margin: 0px;
 }

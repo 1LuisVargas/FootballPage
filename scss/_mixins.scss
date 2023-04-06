@@ -1,0 +1,12 @@
+// Box modeling mixin
+@mixin box($padding:10px, $border:0px, $margin:10px){
+    padding: $padding;
+    border-width: $border;
+    margin: $margin;
+}
+
+//Title mixin
+@mixin titles($text-align:center, $color:navy){
+    text-align: $text-align;
+    color: $color;
+}
