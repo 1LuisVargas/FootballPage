@@ -26,7 +26,7 @@ img{
     width: 90%;
     border-color: navy;
     border-style: solid;
-    margin-bottom: 25px;
+    margin: 25px;
     &:hover{
         width: 100%;
     }
@@ -58,4 +58,5 @@ img{
 
 .fix{
     margin: 0px;
+    padding: 30px;
 }
