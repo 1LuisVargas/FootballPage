@@ -64,13 +64,13 @@ body {
 
 img {
   overflow: hidden;
-  width: 90%;
+  width: 75%;
   border-color: navy;
   border-style: solid;
   margin: 25px;
 }
 img:hover {
-  width: 100%;
+  width: 90%;
 }
 
 .rowOne {
