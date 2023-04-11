@@ -71,6 +71,7 @@ img {
 }
 img:hover {
   width: 90%;
+  margin-right: 0px;
 }
 
 .rowOne {
