@@ -1,7 +1,6 @@
 h1{
     @include box(15px, 5px, 0px);
     @include titles();
-    margin-bottom: 30px;
     text-align: center;
     border-style: dashed;
     border-color:rgb(34, 59, 160);
@@ -28,3 +27,11 @@ p{
     text-indent: 35px;
     text-align: justify;
 }
+
+div ul{
+    @include box(0px, 0px, 0px);
+    li{
+    @extend p;
+    list-style: none;
+    }
+} 

@@ -6,7 +6,6 @@ h1 {
   margin: 0px;
   text-align: center;
   color: navy;
-  margin-bottom: 30px;
   text-align: center;
   border-style: dashed;
   border-color: rgb(34, 59, 160);
@@ -36,13 +35,40 @@ h4 {
   color: navy;
 }
 
-p {
+p, div ul li {
   padding: 10px;
   border-width: 0px;
   margin: 10px;
   font-family: "Ubuntu", sans-serif;
   text-indent: 35px;
   text-align: justify;
+}
+
+div ul {
+  padding: 0px;
+  border-width: 0px;
+  margin: 0px;
+}
+div ul li {
+  list-style: none;
+}
+
+img:hover {
+  width: 90%;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.left:hover, .right:hover, img:hover {
+  transition: all 1s;
+}
+
+.left:hover {
+  transform: skew(10deg);
+}
+
+.right:hover {
+  transform: skew(-10deg);
 }
 
 * {
@@ -69,10 +95,6 @@ img {
   border-style: solid;
   margin: 25px;
 }
-img:hover {
-  width: 90%;
-  margin-right: 0px;
-}
 
 .rowOne {
   background-color: rgb(87, 108, 188);
@@ -86,19 +108,13 @@ img:hover {
   align-items: center;
 }
 
-.left:hover, .right:hover, img:hover {
-  transition: all 1s;
-}
-
-.left:hover {
-  transform: skew(10deg);
-}
-
-.right:hover {
-  transform: skew(-10deg);
-}
-
-.fix {
+div.row h2 {
   margin: 0px;
   padding: 30px;
+}
+
+.first {
+  margin-top: 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */

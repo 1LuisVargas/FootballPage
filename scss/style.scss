@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap');
 @import "mixins";
 @import "text";
+@import "transitions";
 
 *{ //Resetting the page
     margin: 0;
@@ -27,10 +28,6 @@ img{
     border-color: navy;
     border-style: solid;
     margin: 25px;
-    &:hover{
-        width: 90%;
-        margin-right: 0px;
-    }
 }
 
 .rowOne{
@@ -45,19 +42,15 @@ img{
     align-items: center;
 }
 
-.left:hover, .right:hover, img:hover{
-    transition: all 1s;
+div.row{
+    h2{
+        margin: 0px;
+        padding: 30px;
+    }
 }
 
-.left:hover{
-    transform: skew(10deg);
-}
-
-.right:hover{
-    transform: skew(-10deg);
-}
-
-.fix{
-    margin: 0px;
-    padding: 30px;
+.first{
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
