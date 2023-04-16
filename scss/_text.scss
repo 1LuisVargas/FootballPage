@@ -31,7 +31,7 @@ p{
 div ul{
     @include box(0px, 0px, 0px);
     li{
-    @extend p;
-    list-style: none;
+        @extend p;
+        list-style: none;
     }
-} 
+}
