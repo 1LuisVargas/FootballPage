@@ -10,58 +10,72 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Linking AOS library CSS file -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Linking animate style CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <!-- Linking my personal CSS file -->
-        <link rel="stylesheet" href="../css/style.css">
-    
+    <link rel="stylesheet" href="../css/style.css">
+
     <!-- All relevant information for SEO-->
     <meta name="description" content="Learn everything about the 2022 Soccer World Cup">
-    <meta name="keywords" content="Soccer World Cup, World Cup 2022, Football World Cup, Messi, Mbappé, Enzo Fernandez, Dibu Martinez, Argentina football selection, France football selection, Qatar 2022">
+    <meta name="keywords"
+        content="Soccer World Cup, World Cup 2022, Football World Cup, Messi, Mbappé, Enzo Fernandez, Dibu Martinez, Argentina football selection, France football selection, Qatar 2022">
     <title>2022 Football World Cup, Argentina's Amazing Road to the Title</title>
-    
+
     <link rel="icon" type="image/x-icon" href="../images/soccer-ball.png">
 </head>
 
 <body>
     <!-- Bootstrap navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
+        <div class="container">
+            <a class="navbar-brand animate__animated animate__bounceInDown" href="#">
+                <img src="../images/football.png" alt="Football logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="../index.html">Home</a>
-                    <a class="nav-link active" aria-current="page" href="./world-cup.html">World Cup 2022</a>
-                    <a class="nav-link" href="./premier-league.html">Premier League</a>
-                    <a class="nav-link" href="./serie-a.html">Serie A</a>
-                    <a class="nav-link" href="./la-liga.html">La Liga</a>
-                </div>
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="./world-cup.html">World Cup 2022</a>
+                <a class="nav-link" href="./premier-league.html">Premier League</a>
+                <a class="nav-link" href="./serie-a.html">Serie A</a>
+                <a class="nav-link" href="./la-liga.html">La Liga</a>
             </div>
+        </div>
+        <a class="navbar-brand animate__animated animate__bounceInDown" href="#">
+            <img src="../images/football.png" alt="Football logo">
+        </a>
         </div>
     </nav>
 
     <main>
-        <h1>The 2022 Football World Cup!</h1>
-        <div class="rowOne">
-        <p class="first">The World Cup is the most prestigious association football tournament in the world, as well as the most
-            widely viewed and followed single sporting event in the world. The viewership of the 2018 World Cup was
-            estimated to be 3.57 billion (close to half of the global population), while the engagement with 2022 World
-            Cup was estimated to be around 5 billion with close to 1.5 billion people watching the final match.</p>
+        <div class="rowOne first">
+            <h1>The 2022 Football World Cup!</h1>
+            <p>The World Cup is the most prestigious association football tournament in the world, as well
+                as the most
+                widely viewed and followed single sporting event in the world. The viewership of the 2018 World Cup was
+                estimated to be 3.57 billion (close to half of the global population), while the engagement with 2022
+                World
+                Cup was estimated to be around 5 billion with close to 1.5 billion people watching the final match.</p>
+
+            <h2>History of the World Cup</h2>
+            <p>The first official World Cup was played in Uruguay 1930, and since then the tournament has been held
+                every
+                fourth year (with some exceptions for interruption due to the Second World War). Within all of those
+                tournaments, Brazil holds the record for the most wins, with 5 titles, Germany and Italy are tied in
+                second
+                with 4 titles each, with Argentina close behind in third place with 3 titles to date.</p>
         </div>
 
-        <h2>History of the World Cup</h2>
-        <p>The first official World Cup was played in Uruguay 1930, and since then the tournament has been held every
-            fourth year (with some exceptions for interruption due to the Second World War). Within all of those
-            tournaments, Brazil holds the record for the most wins, with 5 titles, Germany and Italy are tied in second
-            with 4 titles each, with Argentina close behind in third place with 3 titles to date.</p>
-
-        
         <!-- Bootstrap grid system -->
         <div class="container-fluid">
-            <div class="row rowOne">
+            <div class="row">
                 <h2>Latest World Cup (Quatar 2022). Argentina's road to victory.</h2>
                 <div class="col-12 col-lg-6">
                     <h3>How did it begin? Scaloni's arrival to the Argentinian national team</h3>
@@ -73,13 +87,13 @@
                         as the official coach for the Argentinian national team. This would be the beginning of a great
                         journey for Scaloni and for the Argentinian national team.</p>
                 </div>
-                <div class="col-12 col-lg-6 text-center">
+                <div class="col-12 col-lg-6 text-center" data-aos="fade-left">
                     <img class="right" src="../images/lionel-scaloni.jpg"
                         alt="Lionel Scaloni pointing to the front with his left hand">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6 order-2 order-md-1 text-center">
+            <div class="row rowOne">
+                <div class="col-12 col-md-6 order-2 order-md-1 text-center" data-aos="fade-right">
                     <img class="left" src="../images/copa-america.jpg"
                         alt="Argentina's starting eleven for a Copa America 2019 match">
                 </div>
@@ -91,7 +105,7 @@
                         the third place against Chile 2-1.</p>
                 </div>
             </div>
-            <div class="row rowOne">
+            <div class="row">
                 <div class="col-12 col-md-6">
                     <h3>Copa America 2020/2021</h3>
                     <p>As a small disclosure, the Copa America was intended to be played in 2020, but due to the new
@@ -101,13 +115,13 @@
                         which resulted on the Argentinian football team winning the Copa America 1-0 against Brazil on
                         July 10th, 2021.</p>
                 </div>
-                <div class="col-12 col-md-6 text-center">
+                <div class="col-12 col-md-6 text-center" data-aos="fade-left">
                     <img class="right" src="../images/copa-america-2021.jpg"
                         alt="Argentina celebrating after having won the Copa Aperica 2021">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-lg-6 order-lg-1 order-2 text-center">
+            <div class="row rowOne">
+                <div class="col-12 col-lg-6 order-lg-1 order-2 text-center" data-aos="fade-right">
                     <img class="left" src="../images/argentina-saudi.jpg"
                         alt="Messi grabbing his face after having lost against Saudi Arabia">
                 </div>
@@ -123,7 +137,7 @@
                         2022 edition of the World Cup.</p>
                 </div>
             </div>
-            <div class="row rowOne">
+            <div class="row">
                 <div class="col-12 col-lg-6">
                     <h3>Argentina's recovery and rise to the top</h3>
                     <p>After having a hard start on the World Cup, they raised against Poland and Mexico to come out
@@ -135,13 +149,13 @@
                         of Argentina after making 2 goals in minutes 83 and 101, which would tie the match again. Only
                         in the penalty shootout would Argentina manage to win the match 4-3.</p>
                 </div>
-                <div class="col-12 col-lg-6 text-center">
+                <div class="col-12 col-lg-6 text-center" data-aos="fade-left">
                     <img class="right" src="../images/guardiol-messi.jpg"
                         alt="Guardiol trying to get a hold of Messi who's going pass with the ball">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-xl-6 order-2 order-xl-1 text-center">
+            <div class="row rowOne">
+                <div class="col-12 col-xl-6 order-2 order-xl-1 text-center" data-aos="fade-right">
                     <img class="left" src="../images/messi-levantando-copa.jpg" alt="Messi raising the 2022 world cup">
                 </div>
                 <div class="col-12 col-xl-6 order-1 order-xl-2">
@@ -168,39 +182,51 @@
             </div>
         </div>
     </main>
-    
+
     <section>
         <!-- Bootstrap grid system -->
         <div class="container-fluid">
-            <div class="row rowOne">
+            <div class="row">
                 <h2>Most notable players in the 2022 World Cup</h2>
                 <div class="col-12 col-xl-6">
                     <ul>
-                        <li>Lionel Messi: Did an amazing worldcup from the first match, up until the last one, which earned
-                            him the Gold Ball, which is a trophy given to the best player of the world cup. You can also see
-                            his statistic with Paris Saint Germain on the official  <a target="_blank"
+                        <li>Lionel Messi: Did an amazing worldcup from the first match, up until the last one, which
+                            earned
+                            him the Gold Ball, which is a trophy given to the best player of the world cup. You can also
+                            see
+                            his statistic with Paris Saint Germain on the official <a target="_blank"
                                 href="https://www.ligue1.com/player?id=lionel-andres-messi-cuccittini">Ligue 1 page</a>.
                         </li>
-                        <li>Kylian Mbappé: Played an excellent worldcup too, scoring 9 goals through the entire world cup,
-                            which earned him the Gold Boot, which is a trophy given to the top scorer of the world cup. You
+                        <li>Kylian Mbappé: Played an excellent worldcup too, scoring 9 goals through the entire world
+                            cup,
+                            which earned him the Gold Boot, which is a trophy given to the top scorer of the world cup.
+                            You
                             can also see his statistic with Paris Saint Germain on the official <a target="_blank"
                                 href="https://www.ligue1.com/player?id=kylian-mbappe-lottin">Ligue 1 page</a>.</li>
-                        <li>Emiliano "Dibu" Martinez: Was very consistent through the entire worldcup, and was excellent in
-                            the critical times (penalty shootouts), which earned him the Gold Glove, which is a trophy given
-                            to the best goalkeeper in the world cup. You can also see his statistic with Aston Villa on the
+                        <li>Emiliano "Dibu" Martinez: Was very consistent through the entire worldcup, and was excellent
+                            in
+                            the critical times (penalty shootouts), which earned him the Gold Glove, which is a trophy
+                            given
+                            to the best goalkeeper in the world cup. You can also see his statistic with Aston Villa on
+                            the
                             official <a target="_blank"
                                 href="https://www.premierleague.com/players/4245/Emiliano-Mart%C3%ADnez/stats">Premier
                                 League page</a>.</li>
-                        <li>Enzo Fernandez: Was an amazing discovery from Lionel Scaloni. While he didn't start the world
-                            cup from the first match, he entered in the second match and made a big positive impact on the
-                            team, which earned him more time on the team, and allowed him to give an excellent performance
-                            from that point forward. He earned the prize to the best young player of the world cup. You can
+                        <li>Enzo Fernandez: Was an amazing discovery from Lionel Scaloni. While he didn't start the
+                            world
+                            cup from the first match, he entered in the second match and made a big positive impact on
+                            the
+                            team, which earned him more time on the team, and allowed him to give an excellent
+                            performance
+                            from that point forward. He earned the prize to the best young player of the world cup. You
+                            can
                             also see his statistic with Chelsea on the official <a target="_blank"
-                                href="https://www.premierleague.com/players/63741/Enzo-Fern%C3%A1ndez/stats">Premier League
+                                href="https://www.premierleague.com/players/63741/Enzo-Fern%C3%A1ndez/stats">Premier
+                                League
                                 page</a>.</li>
                     </ul>
                 </div>
-                <div class="col-12 col-xl-6 text-center">
+                <div class="col-12 col-xl-6 text-center" data-aos="fade-left">
                     <img class="right" src="../images/world-cup-award-winners.jpg"
                         alt="Enzo Fernandez, Messi, Dibu Martinez, and Mbappé, raising their individual trophies in the 2022 World Cup">
                 </div>
@@ -215,9 +241,15 @@
             </span>
         </div>
     </footer>
-    <!-- Do NOT move the script from here. It should be at the bottom of the body. -->
+    <!-- Do NOT move the scripts from here. It should be at the bottom of the body. This is the bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Adding AOS javascript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

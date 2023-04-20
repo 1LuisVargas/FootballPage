@@ -10,6 +10,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
+    <!-- Linking AOS library CSS file -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+    <!-- Linking animate style CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <!-- Linking my personal CSS file -->
     <link rel="stylesheet" href="../css/style.css">
     
@@ -23,27 +29,32 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
+        <div class="container">
+            <a class="navbar-brand animate__animated animate__bounceInDown" href="#">
+                <img src="../images/football.png" alt="Football logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="../index.html">Home</a>
-                    <a class="nav-link" href="./world-cup.html">World Cup 2022</a>
-                    <a class="nav-link" href="./premier-league.html">Premier League</a>
-                    <a class="nav-link active" aria-current="page" href="./serie-a.html">Serie A</a>
-                    <a class="nav-link" href="./la-liga.html">La Liga</a>
-                </div>
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="./world-cup.html">World Cup 2022</a>
+                <a class="nav-link" href="./premier-league.html">Premier League</a>
+                <a class="nav-link active" aria-current="page" href="./serie-a.html">Serie A</a>
+                <a class="nav-link" href="./la-liga.html">La Liga</a>
             </div>
+        </div>
+        <a class="navbar-brand animate__animated animate__bounceInDown" href="#">
+            <img src="../images/football.png" alt="Football logo">
+        </a>
         </div>
     </nav>
 
     <main>
-        <h1>Serie A, top 5 of the best football leagues in the world!</h1>
-
         <div class="rowOne first">
+        <h1>Serie A, top 5 of the best football leagues in the world!</h1>
         <p>Serie A is currently regarded as one of the best football leagues in the world for several reasons. First and
             foremost, the league boasts some of the best football teams and players in the world. Teams such as
             Juventus, AC Milan, Inter Milan, and Napoli have a rich history of success both domestically and
@@ -94,11 +105,11 @@
                 statistic in the official <a target="_blank"
                     href="https://www.legaseriea.it/en/player/paulo-dybala-90153/statistiche"> Serie A page</a>.</p>
                 </div>
-                <div class="col-12 col-md-6 g-3 order-1 text-center">
+                <div class="col-12 col-md-6 g-3 order-1 text-center" data-aos="flip-left" data-aos-duration="1500">
                     <img src="../images/romelu-lukaku.jpg"
                     alt="Romelu Lukaku after passing an enemy with the ball">
                 </div>
-                <div class="col-12 col-md-6 g-3 order-2 text-center">
+                <div class="col-12 col-md-6 g-3 order-2 text-center" data-aos="flip-right" data-aos-duration="1500">
                     <img src="../images/paulo-dybala.jpg"
                     alt="Paulo Dybala celebrating a goal with the Argentina national team">
                 </div>
@@ -118,11 +129,11 @@
                 official <a target="_blank"
                     href="https://www.legaseriea.it/en/player/nicolo-barella-90079/statistiche">Serie A page</a>.</p>
                 </div>
-                <div class="col-12 col-md-6 g-3 order-1 text-center">
+                <div class="col-12 col-md-6 g-3 order-1 text-center" data-aos="flip-left" data-aos-duration="1500">
                     <img src="../images/manuel-locatelli.jpg"
                     alt="Manuel Locatelli fighting the ball with an enemy">
                 </div>
-                <div class="col-12 col-md-6 g-3 order-2 text-center">
+                <div class="col-12 col-md-6 g-3 order-2 text-center" data-aos="flip-right" data-aos-duration="1500">
                     <img src="../images/nicolo-barella.jpg" alt="Nicolo Barella celebrating a goal pointing at the sky">
                 </div>
             </div>
@@ -143,11 +154,11 @@
                     statistic in the official <a target="_blank"
                     href="https://www.legaseriea.it/en/player/federico-chiesa-90214/statistiche">Serie A page</a>.</p>
                 </div>
-                <div class="col-12 col-md-6 g-3 order-1 text-center">
+                <div class="col-12 col-md-6 g-3 order-1 text-center" data-aos="flip-left" data-aos-duration="1500">
                     <img src="../images/dusan-vlahovic.jpg"
                     alt="Dusan Vlahovic screaming as a goal celebration">
                 </div>
-                <div class="col-12 col-md-6 g-3 order-2 text-center">
+                <div class="col-12 col-md-6 g-3 order-2 text-center" data-aos="flip-right" data-aos-duration="1500">
                     <img src="../images/federico-chiesa.jpeg"
                     alt="Federico Chiesa celebrating a goal with his arms spread wide">
                 </div>
@@ -166,6 +177,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+
+    <!-- Adding AOS javascript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

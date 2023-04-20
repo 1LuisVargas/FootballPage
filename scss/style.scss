@@ -24,10 +24,10 @@ body{
 
 img{
     overflow: hidden;
-    width: 75%;
+    width: 85%;
     border-color: navy;
     border-style: solid;
-    margin: 25px;
+    margin: 35px;
 }
 
 .rowOne{
@@ -51,6 +51,19 @@ div.row{
 
 .first{
     margin-top: 0px;
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 50px;
+}
+
+.container-fluid, .container{
+    overflow: hidden;
+}
+
+a.navbar-brand img{
+    size: 48px;
+    @include box(0px, 0px, 0px)
+}
+
+a.navbar-brand{
+    margin: 0px;
 }

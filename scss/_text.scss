@@ -1,9 +1,7 @@
 h1{
-    @include box(15px, 5px, 0px);
+    @include box(15px, 0px, 0px);
     @include titles();
     text-align: center;
-    border-style: dashed;
-    border-color:rgb(34, 59, 160);
 }
 
 h2{
