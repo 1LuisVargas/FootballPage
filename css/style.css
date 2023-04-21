@@ -1,7 +1,7 @@
 /*Notes in CSS */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap");
 h1 {
-  padding: 15px;
+  padding: 45px;
   border-width: 0px;
   margin: 0px;
   text-align: center;
@@ -67,7 +67,7 @@ img {
 }
 
 body {
-  background-color: rgb(165, 215, 232);
+  background-color: rgb(177, 178, 255);
 }
 
 .navbar-collapse {
@@ -75,7 +75,7 @@ body {
 }
 
 .navbar-expand-lg, .footer {
-  background-color: skyblue;
+  background-color: rgb(140, 255, 226);
 }
 
 img {
@@ -87,11 +87,11 @@ img {
 }
 
 .rowOne {
-  background-color: rgb(87, 108, 188);
+  background-color: rgb(238, 241, 255);
 }
 
 .rowTwo {
-  background-color: rgb(165, 215, 232);
+  background-color: rgb(177, 178, 255);
 }
 
 .row {
@@ -122,4 +122,9 @@ a.navbar-brand img {
 
 a.navbar-brand {
   margin: 0px;
+}
+
+div p a, div ul li a {
+  color: rgb(25, 55, 109);
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
